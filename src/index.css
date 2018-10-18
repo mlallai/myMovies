@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* NAVBAR */
+
+#movieLogo {
+  /* width: 150px;
+  height: 150px; */
+  border: 1px solid black;
+  transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 7s linear infinite;
+}
+
+.firstNavbar {  
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.firstNavbar img {
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#Popover1 {
+  background:none;
+  color: black;
+  border: white;
+}
+
+
+/* MOVIES */
+
+.movieCardContainer {
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.movieCard {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  padding-top: 30px;
+  border-radius: 12px;
+}
+
+.movieImage {
+  text-align:center;
+  margin-bottom: 20px;
+  height: 300px;
+  transition: transform 0.5s ease;
+}
+
+
+.movieImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.icon {
+  transition: transform 0.2s ease;
+  
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(2);
+  
+}
+
+.icon:visited {
+  color: red;
+}
+
+.movieCard h1 {
+  /* text-align:left; */
+  font-size: 30px;
+}
+
+.movieCard p {
+  text-align:left;
+  font-size: 13px;
+  height: 150px;
+  overflow: scroll;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
